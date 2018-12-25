@@ -1,0 +1,20 @@
+vue-cli使用
+npm i vue-cli -g全局安装vue-cli工具
+vue init webpack projectname 快速安装框架
+
+
+
+
+详细参照地址https://honey3go.github.io/2017/11/16/%E6%95%99%E7%A8%8B-%E5%9C%A8vue-cli%E4%B8%AD%E4%BD%BF%E7%94%A8less%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A%E5%86%99%E5%85%A5%E5%8D%95%E7%BB%84%E4%BB%B6%E3%80%81%E5%BC%95%E5%85%A5%E5%92%8C%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/
+通过vue-cli快速搭建框架 通过安装 npm i less less-loader --save-dev开发环境使用
+//GlobleLessVarables.less
+定义网站主色
+@mainColor: #2c3e50;
+//app.vue
+<style lang='less'>
+//引用文件  加上style的lang为less 直接使用
+@import './assets/GlobleLessVarables.less';
+#app {
+  color: @mainColor;
+}
+</style>
